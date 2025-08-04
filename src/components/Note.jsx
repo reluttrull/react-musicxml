@@ -1,12 +1,18 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
-export function Note({ id, name }) {
+export function Note({ pitch, duration, type }) {
   const [count, setCount] = useState(0)
 
+
   return (
-    <>
-      <note></note>
-    </>
+    <note>
+      <pitch>
+        <step>{pitch.substring(0,pitch.length-1)}</step>
+        <octave>{pitch[pitch.length-1]}</octave>
+      </pitch>
+      <duration>{duration}</duration>
+      <type>{type}</type>
+    </note>
   )
 }
 

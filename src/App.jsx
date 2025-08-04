@@ -28,7 +28,7 @@ function App() {
         </Part>
         <Part id="2">
           <Measure number="1" keysig="G" time="4/4" clef="bass">
-            <Note pitch="D3" duration="2" type="half" />
+            <Note pitch="F#3" duration="2" type="half" />
             <Note pitch="G3" duration="2" type="half" />
           </Measure>
         </Part>
